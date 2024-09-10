@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+
+    <script>
+
+        class Student {
+            Name
+            Age
+            Username
+            constructor(Name, Age, Username){
+                this.Name = Name;
+                this.Age = Age;
+                this.Username = Username;
+            }
+
+            study(){
+                console.log(`${this.Name} is Studying....`)
+            }
+
+            play(){
+                console.log('Playing....')
+            }
+
+            doHomeWork(){
+
+            }
+        }   
+
+        const student = new Student("Gomer Gaufo JR.", 19, "KiraaDev");
+
+        console.log(`I am ${student.Name}, ${student.Age} years old. My username is ${student.Username} `)
+
+        const student1 = new Student("Alice Guo", 40, "GUA PING");
+
+        console.log(`I am ${student1.Name}, ${student1.Age} years old. My username is ${student1.Username} `)
+
+        student1.study()
+    </script>   
+</body>
+</html>
