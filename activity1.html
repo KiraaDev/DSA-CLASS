@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Student {
+            idNumber
+            firstName
+            middleName
+            lastName
+            birthdate
+            username
+            emailAddess
+            password
+            homeAddress
+            constructor(idNumber, firstName, middleName, lastName, birthdate, username, emailAddess, password, houseNumber, purokOrZone, barangay, municipality, province) {
+                this.idNumber = idNumber
+                this.firstName = firstName
+                this.middleName = middleName
+                this.lastName = lastName
+                this.birthdate = birthdate
+                this.username = username
+                this.emailAddess = emailAddess
+                this.password = password
+                this.homeAddress = {
+                    houseNumber: houseNumber,
+                    purokOrZone: purokOrZone,
+                    barangay: barangay,
+                    municipality: municipality,
+                    province: province
+                }
+            }
+
+        }
+
+
+
+
+        const stundent = new Student(911, "Alice", "Gua", "Ping", "Oct 4, 1999", "GUAPING", "alice@gmail.com", "aAJKSJJAsjdh#4JAKSdj3", 4545, 4, 45, "Legazpi City", "Albay");
+
+        console.log(stundent)
+
+        console.log(`I am ${stundent.firstName} ${stundent.middleName} ${stundent.lastName} from ${stundent.homeAddress.municipality}, ${stundent.homeAddress.province}`)
+        console.log(`Id Number: ${stundent.idNumber}`)
+        console.log(`Username: ${stundent.username}`)
+        console.log(`Email: ${stundent.emailAddess}`)
+        console.log(`Birtdate: ${stundent.birthdate}`)
+        console.log(`House Number: No. ${stundent.homeAddress.houseNumber}`)
+
+    </script>
+</body>
+
+</html>
